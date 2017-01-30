@@ -1,0 +1,2 @@
+# MVPTemplate
+利用Studio的模板功能做的一个简单的MVP常用模板
