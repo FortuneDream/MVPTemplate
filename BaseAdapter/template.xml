@@ -2,41 +2,30 @@
 <template
     format="5"
     revision="5"
-    name="BaseActivity"
+    name="BaseAdapter"
     minApi="7"
     minBuildApi="14"
-    description="Creates a mvp activity">
+    description="Creates a mvp adapter">
 
     <category value="MVP" />
     <formfactor value="Mobile" />
 
     <parameter
-        id="activityName"
-        name="Activity Name"
+        id="adapterName"
+        name="Adapter Name"
         type="string"
         constraints="class|unique|nonempty"
-        suggest="${layoutToActivity(layoutName)}"
-        default="MainActivity"
-        help="The name of the activity class to create" />
+        help="The name of the adapter class to create" />
 
  
-    <parameter
-        id="presenterName"
-        name="Presenter Name"
-        type="string"
-        constraints="class|unique|nonempty"
-        default="MainPresenter"
-        help="Presenter" />
-
    
     <parameter
-        id="activityLayoutName"
-        name="Activity Layout Name"
+        id="itemLayoutName"
+        name="Item Layout Name"
         type="string"
         constraints="layout|unique|nonempty"
-        suggest="${activityToLayout(activityName)}"
-        default="activity_main"
-        help="The name of the layout to create for the activity" />
+        default="item_adapter"
+        help="The name of the layout to create for the item" />
     
     <parameter
         id="packageName"
